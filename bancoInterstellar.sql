@@ -8,7 +8,7 @@ CREATE TABLE personagens (
     fkPai int,
     foreign key (fkPai) REFERENCES personagens(idPersonagem), 
     idade int,
-    periodoMorte varchar(45)
+    periodoMorte varchar(100)
 );
 CREATE TABLE protagonistas(
 	idProtagonista int,
@@ -99,4 +99,32 @@ INSERT INTO tripulacao VALUES
 ,(2, 11, 2, 2)
 ,(2, 12, 2, 2);
 
+INSERT INTO galaxia VALUES 
+(1, 'Via Láctea')
+,(2, 'Desconhecida1')
+,(3, 'Desconhecida2');
 
+INSERT INTO sistema VALUES
+(1, 1 ,'Sistema Solar')
+,(2, 2, 'DesconhecidoX')
+,(3, 3, 'DesconhecidoY');
+
+INSERT INTO tempoPlanetas VALUES 
+(1, 61320.00)
+,(2, 0) -- em dúvida
+,(3, 0); -- em dúvida
+
+INSERT INTO orbita VALUES 
+(1, 'Sol')
+,(2, 'Gargantua')
+,(3, 'Desconhecida');
+
+INSERT INTO planetas VALUES 
+(0, 1, null, 'Terra', 1)
+,(2, 2, 1, 'Miller', 2)
+,(3, 2, null, 'Mann', 2) -- em dúvida
+,(4, 3, null, 'Edmunds', 3); -- em dúvida
+
+INSERT INTO aterrissagem VALUES
+()
+,();
