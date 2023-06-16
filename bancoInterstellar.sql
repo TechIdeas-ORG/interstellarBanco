@@ -90,4 +90,13 @@ INSERT INTO protagonistas VALUES ( 1, 2)
 ,(5, 12)
 ,(6, 9);
 
-INSERT INTO 
+INSERT INTO tripulacao VALUES
+(1, 14, null, null)
+,(1, 13, 1, 14)
+,(2, 2, null, null)
+,(2, 8, 2, 2)
+,(2, 9, 2, 2)
+,(2, 11, 2, 2)
+,(2, 12, 2, 2);
+
+
