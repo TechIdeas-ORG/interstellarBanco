@@ -1,11 +1,14 @@
-CREATE DATABASE interstellar;
+DROP DATABASE if exists interstellar;
+CREATE DATABASE if not exists interstellar;
 USE interstellar;
 
 CREATE TABLE personagens (
 	idPersonagem int primary key,
     nome VARCHAR(90),
     fkPai int,
-    foreign key (fkPai) REFERENCES personagens(idPersonagem)
+    foreign key (fkPai) REFERENCES personagens(idPersonagem), 
+    idade int,
+    periodoMorte varchar(45)
 );
 CREATE TABLE protagonistas(
 	idProtagonista int,
@@ -61,3 +64,30 @@ CREATE TABLE aterrissagem(
     foreign key (fkPlaneta) references planetas(idPlaneta),
     primary key (idAterrisagem)
 );
+
+select * from personagens;
+
+INSERT INTO personagens VALUES 
+(1, 'Donald Cooper', null, 68, 'durante a missão no primeiro planeta')
+,(2, 'Joseph Cooper', 1, 41, null) -- tripulante2ªviagem
+,(3, 'Murph Criança', 2, 10, null)
+,(4, 'Murph Adulta', 2, 33, null)
+,(5, 'Murph Velha', 2, 70, 'após o retorno do pai')
+,(6, 'Tom Jovem', 2, 15, null)
+,(7, 'Tom Adulto', 2, 38, 'antes do pai')
+,(8, 'Robot TARS', null, null, null) -- tripulante2ªviagem
+,(9, 'Dr. Doyle', null, 36, 'durante missão no primeiro planeta') -- tripulante2ªviagem
+,(10, 'Professor John Brand', null, 68, 'após finalização da missão no primeiro planeta')
+,(11, 'Amelia Brand', null, 35, null) -- tripulante2ªviagem
+,(12, 'Astronauta Romilly', null, 39, 'início da missão no segundo planeta') -- tripulante2ªviagem
+,(13, 'Robot CASE', null, null, 'durante a segunda missão') -- tripulante1ªviagem
+,(14, 'Dr. Mann', null, 42, 'fim da segunda missão'); -- tripulante1ªviagem
+
+INSERT INTO protagonistas VALUES ( 1, 2)
+,(2, 4)
+,(3, 10)
+,(4, 11)
+,(5, 12)
+,(6, 9);
+
+INSERT INTO 
