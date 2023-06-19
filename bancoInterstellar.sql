@@ -111,8 +111,8 @@ INSERT INTO sistema VALUES
 
 INSERT INTO tempoPlanetas VALUES 
 (1, 61320.00)
-,(2, 0) -- em dúvida
-,(3, 0); -- em dúvida
+,(2, 8322.00)
+,(3, 4000.00);
 
 INSERT INTO orbita VALUES 
 (1, 'Sol')
@@ -120,11 +120,12 @@ INSERT INTO orbita VALUES
 ,(3, 'Desconhecida');
 
 INSERT INTO planetas VALUES 
-(0, 1, null, 'Terra', 1)
+(1, 1, null, 'Terra', 1)
 ,(2, 2, 1, 'Miller', 2)
-,(3, 2, null, 'Mann', 2) -- em dúvida
-,(4, 3, null, 'Edmunds', 3); -- em dúvida
+,(3, 2, 2, 'Mann', 2)
+,(4, 3, 3, 'Edmunds', 3);
 
 INSERT INTO aterrissagem VALUES
-()
-,();
+(1, '2055-02-24', 2, 's', 1)
+,(2, '2124-12-01', 3, 's', 2)
+,(3, '2155-11-06', 4, 'n', 1);
