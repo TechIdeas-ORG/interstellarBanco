@@ -1,3 +1,3 @@
 # interstellarBanco
 banco de dados do select war
-![image](https://github.com/TechIdeas-ORG/interstellarBanco/assets/67590378/5a82fca4-531d-4b1b-9e20-5aca705ebebf)
+![image](https://github.com/TechIdeas-ORG/interstellarBanco/assets/67590378/8e97e05b-bf3b-4e03-ba5d-3c4c8225fa22)
