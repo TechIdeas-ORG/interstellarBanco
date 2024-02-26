@@ -1,3 +1,4 @@
+-- teste
 DROP DATABASE if exists interstellar;
 CREATE DATABASE if not exists interstellar;
 USE interstellar;
